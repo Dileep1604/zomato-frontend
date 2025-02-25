@@ -1,0 +1,208 @@
+/* 🌟 Futuristic Restaurant List Page */
+.restaurant-list-container {
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 1));
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  color: #f8f8f8;
+}
+
+/* 📌 Heading with Gradient Text */
+.restaurant-list h1 {
+  font-size: 38px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 🍽️ Restaurant Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  width: 100%;
+  max-width: 1300px;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* 🛠️ Filters with Hover Effect */
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+/* 🔍 Filter Buttons */
+.filter-item {
+  min-width: 160px;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+}
+
+.filter-item:hover {
+  background: linear-gradient(90deg, #ff00ff, #ff0080);
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
+}
+
+/* 📍 Pagination Container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding: 16px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+}
+
+/* 🔄 Pagination Buttons */
+.MuiPagination-root {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+.MuiPaginationItem-root {
+  font-size: 18px;
+  color: #00c6ff;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.MuiPaginationItem-root:hover {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  transform: scale(1.12);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+}
+
+.MuiPaginationItem-page.Mui-selected {
+  background: linear-gradient(90deg, #00c6ff, #0072ff) !important;
+  color: white !important;
+  font-weight: 700;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.7);
+}
+
+/* 🍽️ Detected Food Message */
+.detected-food {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+  background: linear-gradient(45deg, #ffecb3, #ffd54f);
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 206, 88, 0.6);
+  text-transform: uppercase;
+}
+
+/* 🍲 Restaurant Cards */
+.restaurant-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  padding: 20px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+  text-align: center;
+  position: relative;
+}
+
+/* 🔥 Card Hover Effect */
+.restaurant-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+/* 🖼️ Restaurant Image */
+.restaurant-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* 📝 Restaurant Info */
+.restaurant-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 15px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.restaurant-cuisine {
+  font-size: 18px;
+  font-weight: 500;
+  color: #bbb;
+}
+
+/* 🛒 View Details Button */
+.view-details {
+  margin-top: 15px;
+  background: linear-gradient(90deg, #ff00ff, #ff0080);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 12px rgba(255, 0, 255, 0.5);
+  border: none;
+}
+
+.view-details:hover {
+  background: linear-gradient(90deg, #ff0080, #ff00ff);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.7);
+  transform: scale(1.08);
+}
+
+/* 🌍 Responsive Design */
+@media screen and (max-width: 768px) {
+  .restaurant-list-container {
+      padding: 30px 15px;
+  }
+
+  .restaurant-list h1 {
+      font-size: 28px;
+  }
+
+  .grid {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      justify-items: center;
+  }
+
+  .pagination-container {
+      padding: 14px;
+  }
+
+  .restaurant-card {
+      width: 90%;
+  }
+}

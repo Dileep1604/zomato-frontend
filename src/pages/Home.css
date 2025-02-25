@@ -1,0 +1,145 @@
+/* 🔥 Unique Neon-Themed Home Page Styling */
+.home-container {
+  margin-top: 20px;
+  position: relative;
+  background: radial-gradient(circle at center, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+              url("../assets/images/Pizza.png") no-repeat center center;
+  background-size: cover;
+  min-height: 90vh;
+  color: #f8f8f8;
+  padding: 50px 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  
+  /* Alternative to backdrop-filter */
+  background-blend-mode: overlay;
+}
+
+/* 🎯 Glassmorphic Search Section */
+.search-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  width: 85%;
+  max-width: 450px;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+  text-align: center;
+
+  /* Alternative filter effect */
+  filter: contrast(1.2) brightness(1.1);
+}
+
+.search-container input, 
+.search-container select {
+  width: 100%;
+  padding: 14px;
+  margin: 12px 0;
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-container input:focus, 
+.search-container select:focus {
+  border-color: #00ffff;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+  outline: none;
+}
+
+/* 🔵 Futuristic Button Styling */
+.search-container button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.5);
+}
+
+.search-container button:hover {
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+}
+
+/* 📷 Image Upload Section with Glow Effect */
+.image-upload-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 20px;
+  width: 85%;
+  max-width: 450px;
+  margin-top: 20px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(255, 0, 255, 0.4);
+
+  /* Alternative effect for backdrop-filter */
+  filter: drop-shadow(0 0 10px rgba(255, 0, 255, 0.6));
+}
+
+.image-upload-container input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(255, 0, 255, 0.5);
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 12px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.image-upload-container input:focus {
+  border-color: #ff00ff;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.6);
+  outline: none;
+}
+
+/* 🚀 3D Button Styling */
+.image-upload-container button {
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(90deg, #ff00ff, #ff0080);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 12px rgba(255, 0, 255, 0.5);
+}
+
+.image-upload-container button:hover {
+  background: linear-gradient(90deg, #ff0080, #ff00ff);
+  transform: scale(1.08);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
+}
+
+/* 🌍 Mobile-Friendly Design */
+@media (max-width: 600px) {
+  .search-container, .image-upload-container {
+      width: 95%;
+      padding: 20px;
+  }
+
+  .home-container {
+      padding: 50px 20px;
+      border-radius: 10px;
+  }
+}

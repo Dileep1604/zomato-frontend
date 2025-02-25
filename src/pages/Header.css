@@ -1,0 +1,128 @@
+/* General Page Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #232526, #414345);
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+/* Header Styling */
+.header-appbar {
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  padding: 20px 40px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  border-radius: 0 0 25px 25px;
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.header-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.header-button {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background: linear-gradient(90deg, #2575fc, #6a11cb);
+  transform: translateY(-3px);
+}
+
+/* Box Styling */
+.search-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  margin: 120px auto 20px;
+  width: 50%;
+  border-radius: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.search-container input, .search-container select {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 15px;
+  border: none;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.search-button {
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(255, 87, 34, 0.4);
+  transition: all 0.3s ease;
+}
+
+.search-button:hover {
+  background: linear-gradient(90deg, #ff5722, #ff9800);
+  transform: scale(1.05);
+}
+
+/* Image Upload Styling */
+.upload-container {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 30px;
+  margin: 20px auto;
+  width: 50%;
+  border-radius: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.upload-button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 114, 255, 0.4);
+  transition: all 0.3s ease;
+}
+
+.upload-button:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .search-container, .upload-container {
+    width: 85%;
+  }
+}
